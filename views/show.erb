@@ -1,0 +1,12 @@
+<h1>Pirate:</h1>
+<p>Name: <%= @pirate.name %></p>
+<p>Height: <%= @pirate.height %></p>
+<p>Weight: <%= @pirate.weight %></p>
+
+
+<h2>Ships:</h2>
+<% @pirate_info["ships"].each do |ship| %>
+    <h4><%= "Ship name: #{ship['name']}" %></h4>
+    <p><%= "Ship type: #{ship["type"]}" %></p>
+    <p><%= "Ship booty: #{ship["booty"]}" %></p>
+<% end %>
